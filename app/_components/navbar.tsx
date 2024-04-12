@@ -17,7 +17,7 @@ export const Navbar = () => {
             alt='logo' />
             <div className="md:ml-auto md:justify-end justify-between w-full flex items-center gap-x-2">
                 <Button asChild size="sm">
-                  <Link href="/documents">Get Noticon Free</Link>
+                  <Link href="/userflow">Get Noticon Free</Link>
                 </Button>
         </div>
         <div>
