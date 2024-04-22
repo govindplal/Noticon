@@ -17,7 +17,7 @@ const Heading = () => {
         better, faster work happens.
       </h3>
       <Button asChild>
-        <Link href="/userflow">Enter Noticon
+        <Link href="/documents">Enter Noticon
         <ArrowRight className="h-4 w-4 ml-2" /></Link>
       </Button>
     </div>

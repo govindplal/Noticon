@@ -1,5 +1,6 @@
 "use client"
 import { Button } from '@/components/ui/button';
+import { connectToDb } from '@/lib/utils';
 import Image from 'next/image';
 // pages/index.tsx
 
@@ -7,11 +8,9 @@ import { useState } from 'react';
 
 export default function Home() {
   const [useCase, setUseCase] = useState('');
-
   const handleUseCaseChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setUseCase(event.target.value);
   };
-
   return (
     <div className="flex h-screen items-center justify-center bg-gray-100">
       <div className="w-full max-w-4xl space-y-8 mx-4">
@@ -130,7 +129,7 @@ export default function Home() {
         <div className='flex flex-row justify-center'><Button>Continue</Button></div>
         <div className="text-center">
           <p className="mt-4 text-sm text-gray-500">
-            See you on the other side
+            See you on the other side.
           </p>
         </div>
       </div>
