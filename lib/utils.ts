@@ -1,21 +1,22 @@
 import { type ClassValue, clsx } from "clsx"
 import { twMerge } from "tailwind-merge"
 
-const {default: mongoose} =  require("mongoose");
+import mongoose from "mongoose";
+// const {default: mongoose} =  require("mongoose");
 
 
 export const connectToDb = async ()  => {
     try{
-        await mongoose.connect(process.env.MONGO!, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            serverSelectionTimeoutMS: 5000 // Timeout waiting for servers to respond
-            });
+        await mongoose.connect(process.env.MONGO as string)
+        // {
+        //     useNewUrlParser: true,
+        //     useUnifiedTopology: true,
+        //     serverSelectionTimeoutMS: 5000 // Timeout waiting for servers to respond
+        //     });
         
         console.log('MongoDB connected!');
     } catch(err){
-        console.error(`Error connecting to MongoDB: ${err}`);
-        process.exit();
+        console.log(`Error connecting to MongoDB: ${err}`);
     }
 };
 
