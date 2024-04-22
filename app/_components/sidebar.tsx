@@ -10,6 +10,7 @@ import { useMutation } from "convex/react"
 import { api } from "@/convex/_generated/api"
 import { Item } from "./item"
 import { useToast } from "@/components/ui/use-toast"
+import { DocumentList } from "./document-list"
 
 
 const Sidebar = () => {
@@ -145,7 +146,7 @@ const Sidebar = () => {
                 />
             </div>
             <div className="mt-4">
-                
+                <DocumentList/>
             </div>
             <div
                 onMouseDown={handleMouseDown}
