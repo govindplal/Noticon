@@ -21,6 +21,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "convex": "^1.11.2",
+    "emoji-picker-react": "^4.9.2",
     "lucide-react": "^0.363.0",
     "mongodb": "^6.5.0",
     "mongoose": "^8.3.2",
@@ -30,6 +31,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.51.2",
+    "react-textarea-autosize": "^8.5.3",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7",
     "usehooks-ts": "^3.1.0"
