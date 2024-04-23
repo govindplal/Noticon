@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 import { ConvexClientProvider } from "@/components/convex-provider";
+import { ModalProvider } from "@/components/modal-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -41,6 +42,7 @@ export default async function RootLayout({
               disableTransitionOnChange
               storageKey="jotion-theme-2"
             >
+              <ModalProvider/>
               {children}
               <Toaster/>
             </ThemeProvider>
