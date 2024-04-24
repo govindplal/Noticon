@@ -3,7 +3,7 @@
 import { ModeToggle } from "@/components/mode-toggle"
 import { Spinner } from "@/components/spinner";
 import { Button } from "@/components/ui/button";
-import { SignInButton, UserButton } from "@clerk/clerk-react";
+import { SignIn, SignInButton, UserButton } from "@clerk/clerk-react";
 import { useConvexAuth } from "convex/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,7 +26,7 @@ export const Navbar = () => {
             {!isAuthenticated && !isLoading && (
             <>
               <div className='flex px-3 text-sm'>
-                <SignInButton mode='modal'>
+                <SignInButton mode='modal' fallbackRedirectUrl='/documents'>
                   <Button className='w-full' size="sm" variant="ghost">
                     Sign in
                   </Button>

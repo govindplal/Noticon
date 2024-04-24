@@ -1,6 +1,5 @@
 "use client"
 import { Button } from '@/components/ui/button';
-import { connectToDb } from '@/lib/utils';
 import Image from 'next/image';
 // pages/index.tsx
 
