@@ -18,7 +18,7 @@ export default function Home() {
             How are you planning to use Notion?
           </h2>
           <p className="mt-2 text-gray-500">
-            We'll streamline your setup experience accordingly.
+            We&apos;ll streamline your setup experience accordingly.
           </p>
         </div>
         <div className="flex flex-row gap-8 space-y-4">
