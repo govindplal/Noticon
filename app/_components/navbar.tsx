@@ -27,8 +27,8 @@ export const Navbar = () => {
             <>
               <div className='flex px-3 text-sm'>
                 <SignInButton mode='modal' fallbackRedirectUrl='/documents'>
-                  <Button className='w-full' size="sm" variant="ghost">
-                    Sign in
+                  <Button className='w-full' size="sm">
+                    Get started
                   </Button>
                 </SignInButton>
               </div>
@@ -37,10 +37,9 @@ export const Navbar = () => {
             {isAuthenticated && !isLoading && (
               <>
               <Button
-              variant="ghost"
               size="sm" asChild>
                 <Link href="/documents">
-                  Enter Jotion
+                  Enter Noticon
                 </Link>
               </Button>
               <UserButton
@@ -48,10 +47,6 @@ export const Navbar = () => {
               />
               </>
             )}
-
-            <Button asChild size="sm">
-              <Link href="/documents">Get Noticon Free</Link>
-            </Button>
         <div>
           <ModeToggle/>
         </div>
